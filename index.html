@@ -1,1 +1,105 @@
-!!!!!! Site under Construction !!!!
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Details</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        body {
+            background-color: #f4f7f6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            color: #333;
+        }
+
+        .container {
+            background-color: #ffffff;
+            padding: 2.5rem;
+            border-radius: 10px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            width: 100%;
+            max-width: 500px;
+        }
+
+        h2 {
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #2c3e50;
+            border-bottom: 2px solid #3498db;
+            padding-bottom: 0.5rem;
+        }
+
+        .student-card {
+            background-color: #fafbfc;
+            border-left: 5px solid #3498db;
+            padding: 1rem;
+            margin-bottom: 1.5rem;
+            border-radius: 0 8px 8px 0;
+            transition: transform 0.2s;
+        }
+
+        .student-card:hover {
+            transform: translateX(5px);
+            background-color: #f1f5f9;
+        }
+
+        .info-row {
+            margin-bottom: 0.5rem;
+            font-size: 1.1rem;
+        }
+
+        .info-row:last-child {
+            margin-bottom: 0;
+        }
+
+        .label {
+            font-weight: bold;
+            color: #7f8c8d;
+        }
+
+        .value {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Student Information</h2>
+
+        <!-- Student 1 -->
+        <div class="student-card">
+            <div class="info-row">
+                <span class="label">Name:</span>
+                <span class="value">Sourav Gaur</span>
+            </div>
+            <div class="info-row">
+                <span class="label">PRN:</span>
+                <span class="value">260240128047</span>
+            </div>
+        </div>
+
+        <!-- Student 2 -->
+        <div class="student-card">
+            <div class="info-row">
+                <span class="label">Name:</span>
+                <span class="value">Sohel</span>
+            </div>
+            <div class="info-row">
+                <span class="label">PRN:</span>
+                <span class="value">260240128045</span>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
