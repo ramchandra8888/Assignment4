@@ -29,7 +29,7 @@ pipeline {
         }
         stage("update-minikube"){
             steps{
-                sh 'kubectl set image deployment/asn41 jenkins-app=ramchandra123/assign4:${BUILD_NUMBER}'
+                sh 'kubectl set image deployment/asn41 assign4=ramchandra123/assign4:${BUILD_NUMBER}'
             }
             
         }
